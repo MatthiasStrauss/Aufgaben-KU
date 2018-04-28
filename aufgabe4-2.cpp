@@ -18,11 +18,16 @@ int main()
         a = teilbar(zahl,i);
         if (a)
         {
-            cout<<"Deine Zahl ist teilbar durch"<<i<<endl;
-            i=10;
+            cout<<"Deine Zahl ist teilbar durch "<<i<<endl;
+        }
+        else
+        {
+            cout<<"Deine Zahl ist nicht durch"<<i<<"teilbar"<<endl;
         }
 
+
     }
+
 }
 
 bool teilbar(int zahl,int teiler)
