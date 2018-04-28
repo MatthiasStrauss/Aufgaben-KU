@@ -5,7 +5,6 @@ bool teilbar(int zahl, int teiler);
 int main()
 {
     int zahl;
-
     bool a=false;
     cout<< "Gib eine positive Zahl ein "<<endl;
     cin>>zahl;
