@@ -13,7 +13,7 @@ int main()
         cout<< "Die Zahl ist negativ gib eine positive Zahl ein"<<endl;
         cin>>zahl;
     }
-    for (int i=2; i<10; i++)
+    for (int i=2; i<10; i++)//der scheint nicht ganz durch zu gehen, der geht nur einmal durch das ganze....else wird nicht ausgeführt
     {
         a = teilbar(zahl,i);
         if (a)
