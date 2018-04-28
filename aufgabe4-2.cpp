@@ -1,8 +1,6 @@
 #include <iostream>
 using namespace std;
-/*
-Funktion y=x_1^3+7*x_2
-}*/
+
 bool teilbar(bool teilbar);
 main()
 {
