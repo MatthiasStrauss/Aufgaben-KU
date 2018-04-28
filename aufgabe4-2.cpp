@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-bool teilbar(bool teilbar);
+bool teilbar(int zahl, int teiler);
 int main()
 {
     int zahl;
@@ -14,7 +14,7 @@ int main()
         cout<< "Die Zahl ist negativ gib eine positive Zahl ein"<<endl;
         cin>>zahl;
     }
-    for (int i=2, i<10, i++)
+    for (int i=2; i<10; i++)
     {
         a = teilbar(zahl,i);
         if (a)
@@ -28,6 +28,12 @@ int main()
 
 bool teilbar(int zahl,int teiler)
 {
-    if(zahl%teiler==0)
-    {return true;}
-    else {return false;}
+    if (zahl % teiler == 0)
+        {
+            return true;
+        }
+    else
+        {
+            return false;
+        }
+}
