@@ -2,10 +2,10 @@
 using namespace std;
 
 bool teilbar(bool teilbar);
-main()
+int main()
 {
     int zahl;
-    int teiler;
+
     bool a=false;
     cout<< "Gib eine positive Zahl ein "<<endl;
     cin>>zahl;
@@ -16,7 +16,7 @@ main()
     }
     for (int i=2, i<10, i++)
     {
-        a = teilbar(zahl,teiler);
+        a = teilbar(zahl,i);
         if (a)
         {
             cout<<"Deine Zahl ist teilbar durch"<<i<<endl;
@@ -26,7 +26,7 @@ main()
     }
 }
 
-bool teilbar(int zahl, int teiler)
+bool teilbar(int zahl,int teiler)
 {
     if(zahl%teiler==0)
     {return true;}
